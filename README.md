@@ -1,47 +1,57 @@
-# Astro Starter Kit: Minimal
+# Public Profile Theme Project
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## Overview
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+This project involves creating a customizable profile page with different themes using Astro. The profile page includes a profile picture, name, bio, social icons, and a set of links. The project supports three distinct themes: Bubblegum, Retro, and Minimal, each with its unique style and design.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Features
 
-## 🚀 Project Structure
+- **Three Themes**: Bubblegum, Retro, and Minimal.
+- **Customizable Profile**: Includes profile picture, name, bio, and social icons.
+- **Dynamic Links**: Each theme supports a set of custom links.
+- **Responsive Design**: Adapts to mobile, tablet, and desktop screens.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Installation
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+1. Clone the repository and navigate to the project directory.
+2. Install the required packages.
+3. Run the development server to view the project in your browser.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Project Structure
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **`/src`**: Contains the source files, including components, layouts, pages, and styles.
+- **`/public`**: Static assets like images and icons.
+- **`astro.config.mjs`**: Astro configuration file.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Adding New Themes
 
-## 🧞 Commands
+To add a new theme:
 
-All commands are run from the root of the project, from a terminal:
+1. Create a new CSS file for the theme.
+2. Update the `index.astro` page and `getStaticPaths` to include the new theme.
+3. Modify the `profileData` object to include information for the new theme.
+4. Update or create components to match the new theme’s styling.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Customization
 
-## 👀 Want to learn more?
+- **Profile Data**: Adjust the profile information in theme-specific pages.
+- **Links**: Modify the links displayed in each theme by updating the `links` array.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Responsive Design
+
+The CSS is designed to be responsive, ensuring that the layout adjusts for mobile, tablet, and desktop screens.
+
+## Contributing
+
+1. Fork the repository and clone it to your local machine.
+2. Create a new branch for your changes.
+3. Make and test your changes.
+4. Submit a pull request with a description of your updates.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+
+For questions or feedback, please reach out to your-email@example.com.
