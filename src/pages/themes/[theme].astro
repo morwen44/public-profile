@@ -2,13 +2,16 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Links from "../../components/Links.astro";
 import Profile from "../../components/Profile.astro";
-import { themes } from '../../scripts/themes';
+import { themes } from "../../scripts/themes";
 
 import "../../styles/bubblegum.css";
 import "../../styles/retro.css";
 import "../../styles/minimal.css";
 
-
+// Considerando que se tenga una API con la estructura de datos de los perfiles
+// const { id } = Astro.params;
+// const response = await fetch(`/api/profiles/${id}`);
+// const profileData = await response.json();
 
 const { theme } = Astro.params;
 const profileData = themes[theme] || themes.default;
@@ -23,15 +26,13 @@ export async function getStaticPaths() {
 
 
 
-console.log(profileData);
+
 ---
 
 <BaseLayout pageTitle={theme.toUpperCase()}>
   <div class={theme} style="min-height: 100vh; width: 100%;">
     <div class="profileWrapper">
       <Profile {...profileData} />
-    <Links />
     </div>
-    
   </div>
 </BaseLayout>

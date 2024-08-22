@@ -1,5 +1,6 @@
 ---
-const { imageUrl, altText, name, bioText, socials } = Astro.props;
+import Links from './Links.astro';
+const { imageUrl, altText, name, bioText, socials, links } = Astro.props;
 
 ---
 
@@ -21,4 +22,5 @@ const { imageUrl, altText, name, bioText, socials } = Astro.props;
       </a>
     ))}
   </div>
+  <Links {links}>
 </div>

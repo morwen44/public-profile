@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,55 +31,127 @@ body {
   padding: 1rem;
 }
 
-.profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .profile-picture {
-    border-radius: 50%;
-    width: 8rem;
-    height: 8rem;
-    object-fit: cover; 
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
 
-  }
-  
- .name {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 2rem;
-  }
-  
- .bio {
-    font-size: .8rem;
-    margin-top: 1rem;
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
 
-  }
-  
+.bio {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: .8rem;
-    margin-top: 1rem;
-  }
-  
-.social-icon-link img {
-    width: 2rem;
-    height: 2rem;
-  }
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
 
-.profileWrapper
-{
+.social-icon-link img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.profileWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden;
-  width: 50vh;
-  padding: 3rem;
-  
+  padding: 1rem;
+}
+
+
+@media (max-width: 600px) {
+  .profile-picture {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .bio {
+    font-size: 0.7rem;
+  }
+
+  .link-item {
+    padding: 0.8rem;
+    margin: 0.8rem;
+  }
+
+  .profileWrapper {
+    width: 80vw;
+    padding: 1rem;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .profile-picture {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .name {
+    font-size: 2.2rem;
+  }
+
+  .bio {
+    font-size: 0.75rem;
+  }
+
+  .link-item {
+    padding: 0.9rem;
+    margin: 1rem;
+  }
+
+  .profileWrapper {
+    width: 50vw;
+    padding: 1rem;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 901px) {
+  .profile-picture {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .bio {
+    font-size: 0.8rem;
+  }
+
+  .link-item {
+    padding: 1rem;
+    margin: 1.2rem;
+  }
+
+  .profileWrapper {
+    width: 50vh;
+    padding: 1rem;
+  }
 }
