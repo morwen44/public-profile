@@ -1,57 +1,63 @@
-# Public Profile Theme Project
+# Theme Profile Website
 
 ## Overview
 
-This project involves creating a customizable profile page with different themes using Astro. The profile page includes a profile picture, name, bio, social icons, and a set of links. The project supports three distinct themes: Bubblegum, Retro, and Minimal, each with its unique style and design.
-
-## Features
-
-- **Three Themes**: Bubblegum, Retro, and Minimal.
-- **Customizable Profile**: Includes profile picture, name, bio, and social icons.
-- **Dynamic Links**: Each theme supports a set of custom links.
-- **Responsive Design**: Adapts to mobile, tablet, and desktop screens.
-
-## Installation
-
-1. Clone the repository and navigate to the project directory.
-2. Install the required packages.
-3. Run the development server to view the project in your browser.
+This project is a theme-based profile website built with Astro. It allows users to view profiles in different themes and provides a link to navigate back to the home page. The profiles are dynamically loaded based on the selected theme, and each theme has its own unique styling.
 
 ## Project Structure
 
-- **`/src`**: Contains the source files, including components, layouts, pages, and styles.
-- **`/public`**: Static assets like images and icons.
-- **`astro.config.mjs`**: Astro configuration file.
+### Components
 
-## Adding New Themes
+- **Footer**: A footer component with a link to navigate back to the home page.
+- **Links**: A component to display a list of links based on the theme.
+- **Profile**: A component to display profile information, including the profile picture, name, bio, social icons, and additional links.
 
-To add a new theme:
+### Layouts
 
-1. Create a new CSS file for the theme.
-2. Update the `index.astro` page and `getStaticPaths` to include the new theme.
-3. Modify the `profileData` object to include information for the new theme.
-4. Update or create components to match the new theme’s styling.
+- **BaseLayout**: The base layout component that includes global styles and meta tags for each page.
 
-## Customization
+### Pages
 
-- **Profile Data**: Adjust the profile information in theme-specific pages.
-- **Links**: Modify the links displayed in each theme by updating the `links` array.
+- **Index**: The home page where users can choose their theme.
+- **Themes**: Dynamic pages for each theme (`bubblegum`, `retro`, `minimal`) that display the corresponding profile and theme-specific styling.
 
-## Responsive Design
+### Scripts
 
-The CSS is designed to be responsive, ensuring that the layout adjusts for mobile, tablet, and desktop screens.
+- **Stars**: A script to create a starry effect in the background.
+- **Themes**: A script to provide theme data including profile information and links.
 
-## Contributing
+### Styles
 
-1. Fork the repository and clone it to your local machine.
-2. Create a new branch for your changes.
-3. Make and test your changes.
-4. Submit a pull request with a description of your updates.
+- **Global Styles**: Contains global CSS rules applied across the entire site.
+- **Theme Styles**: Separate CSS files for each theme (`bubblegum`, `retro`, `minimal`) to handle theme-specific styling.
 
-## License
+## Setup
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+1. **Clone the Repository**
+    ``` bash
+   git clone git@github.com:morwen44/public-profile.git
+   ```
 
-## Contact
+2. **Navigate to the Project Directory**
+    ``` bash
+    cd public-profile
+    ```
 
-For questions or feedback, please reach out to your-email@example.com.
+3. **Start the Development Server**
+    ``` bash
+    npm run dev
+    ```
+
+   This will start a local development server. 
+
+## Features
+
+- **Dynamic Theming**: Supports multiple themes with distinct styles.
+- **Responsive Design**: Adaptable to different screen sizes.
+- **Profile Management**: Display profile information including picture, name, bio, and social links.
+
+## Components and Pages
+
+- **Footer**: Provides a link to navigate back to the home page.
+- **Profile**: Displays profile details including social media icons and theme-specific links.
+- **Themes**: Each theme page (`bubblegum`, `retro`, `minimal`) dynamically loads and displays the corresponding profile data and styles.
