@@ -4,6 +4,10 @@
 
 This project is a theme-based profile website built with Astro. It allows users to view profiles in different themes and provides a link to navigate back to the home page. The profiles are dynamically loaded based on the selected theme, and each theme has its own unique styling.
 
+## Live Demo
+
+You can view the live version of the website [here](https://publicprofilethemes.netlify.app/).
+
 ## Project Structure
 
 ### Components
