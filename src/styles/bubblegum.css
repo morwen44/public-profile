@@ -1,0 +1,76 @@
+.bubblegum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(135deg, #ff9af7, #ff5cf7);
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.bubblegum::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 255, 255, 0.2) 20%,
+      transparent 21%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(255, 255, 255, 0.2) 20%,
+      transparent 21%
+    ),
+    radial-gradient(
+      circle at 40% 80%,
+      rgba(255, 255, 255, 0.2) 20%,
+      transparent 21%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 255, 255, 0.2) 20%,
+      transparent 21%
+    );
+  background-size: 150px 150px;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bubblegum .link-item {
+  width: 100%;
+  margin: 1rem;
+  max-width: 25rem;
+  color: black;
+  background-color: white;
+  border: 0.1rem solid black;
+  border-radius: 1.5rem;
+  box-shadow: 0.5rem 0.5rem black;
+  font-family: "Kode Mono", monospace;
+  transition: all 0.2s ease-in-out;
+}
+
+.bubblegum .link-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0.8rem 0.8rem black;
+}
+
+.bubblegum .profile {
+  color: #000;
+}
+
+.bubblegum .name {
+  font-family: "DM Serif Display", serif;
+
+}
+
+.bubblegum .bio {
+  font-family: "Kode Mono", monospace;
+
+}

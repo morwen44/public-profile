@@ -1,0 +1,52 @@
+.retro {
+  background-color: #fff5e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.retro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(180, 157, 26, 0.082) 0%,
+    rgba(255, 255, 255, 0.1) 10px,
+    rgba(0, 0, 0, 0) 10px,
+    rgba(0, 0, 0, 0) 20px
+  );
+  opacity: 1;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.retro .profileWrapper {
+  z-index: 2;
+}
+
+.retro .name {
+  font-family: "Teko", sans-serif;
+  color: #00bfae;
+}
+
+.retro .bio {
+  font-family: "Courier New", monospace;
+}
+
+.retro .link-item {
+  color: black;
+  background-color: #ff6347;
+  font-family: "Courier New", monospace;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  box-shadow: 0.5rem 0.5rem black;
+}
+
+.retro .link-item:hover {
+  transform: rotate(5deg);
+}

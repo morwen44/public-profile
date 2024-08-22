@@ -1,0 +1,18 @@
+---
+const themes = [
+  { name: "Bubblegum", url: "bubblegum" },
+  { name: "Retro", url: "retro" },
+  { name: "Minimal", url: "minimal" },
+];
+---
+
+
+<div class="links-section">
+    {
+     themes.map((theme) => (
+        <a href={`/themes/${theme.url}`} class="link-item">
+          {theme.name}
+        </a>
+      ))
+    }
+  </div>
