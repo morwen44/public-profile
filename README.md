@@ -47,6 +47,11 @@ You can view the live version of the website [here](https://publicprofilethemes.
     cd public-profile
     ```
 
+3. **Install dependencies**
+
+    ```bash
+    npm install
+    ```
 3. **Start the Development Server**
     ``` bash
     npm run dev
